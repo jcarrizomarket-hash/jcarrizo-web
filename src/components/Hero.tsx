@@ -21,7 +21,7 @@ export default function Hero() {
           </p>
           <div className="flex flex-wrap gap-4 pt-2">
             <a
-              href="mailto:info@jcarrizo.com"
+              href="#contacto"
               className="rounded-full bg-ink px-6 py-3 text-sm font-semibold text-paper transition-colors hover:bg-gold"
             >
               Hablemos

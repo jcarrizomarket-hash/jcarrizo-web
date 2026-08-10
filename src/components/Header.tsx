@@ -22,7 +22,7 @@ export default function Header() {
           ))}
         </nav>
         <a
-          href="mailto:info@jcarrizo.com"
+          href="/#contacto"
           className="rounded-full bg-ink px-4 py-2 text-sm font-medium text-paper transition-colors hover:bg-gold"
         >
           Escribime

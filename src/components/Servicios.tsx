@@ -29,7 +29,7 @@ export default function Servicios() {
               <h3 className="mt-2 font-serif text-2xl text-ink">{s.nombre}</h3>
               <p className="mt-3 flex-1 text-ink/70">{s.detalle}</p>
               <a
-                href="mailto:info@jcarrizo.com"
+                href="#contacto"
                 className="mt-6 text-sm font-semibold text-ink underline decoration-gold decoration-2 underline-offset-4 hover:text-gold"
               >
                 Contame tu caso →
