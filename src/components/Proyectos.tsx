@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const proyectos = [
   {
     nombre: "Eukos Gestión",
@@ -23,6 +25,15 @@ const proyectos = [
     href: "https://burgerlemonde.com",
     dominio: "burgerlemonde.com",
   },
+  {
+    nombre: "Club de Cruceros",
+    categoria: "inCruises",
+    detalle:
+      "Socio de inCruises, el club de recompensas de viajes: ahorros en cruceros, hoteles y resorts, con precios transparentes y sin costos ocultos.",
+    href: "/club-de-cruceros",
+    dominio: "Ver más",
+    externo: false,
+  },
 ];
 
 export default function Proyectos() {
@@ -35,25 +46,32 @@ export default function Proyectos() {
           Además de la consultoría y el coaching, esto es lo que estoy construyendo.
         </p>
 
-        <div className="mt-12 grid gap-6 sm:grid-cols-3">
-          {proyectos.map((p) => (
-            <a
-              key={p.nombre}
-              href={p.href}
-              target="_blank"
-              rel="noreferrer"
-              className="group flex flex-col rounded-2xl border border-ink/10 bg-paper p-8 transition-colors hover:border-gold"
-            >
-              <span className="text-xs font-semibold uppercase tracking-wide text-gold-light">
-                {p.categoria}
-              </span>
-              <h3 className="mt-2 font-serif text-2xl text-ink">{p.nombre}</h3>
-              <p className="mt-3 flex-1 text-sm text-ink/70">{p.detalle}</p>
-              <span className="mt-6 text-sm font-semibold text-ink underline decoration-gold decoration-2 underline-offset-4 group-hover:text-gold">
-                {p.dominio} →
-              </span>
-            </a>
-          ))}
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          {proyectos.map((p) => {
+            const cardClass =
+              "group flex flex-col rounded-2xl border border-ink/10 bg-paper p-8 transition-colors hover:border-gold";
+            const inner = (
+              <>
+                <span className="text-xs font-semibold uppercase tracking-wide text-gold-light">
+                  {p.categoria}
+                </span>
+                <h3 className="mt-2 font-serif text-2xl text-ink">{p.nombre}</h3>
+                <p className="mt-3 flex-1 text-sm text-ink/70">{p.detalle}</p>
+                <span className="mt-6 text-sm font-semibold text-ink underline decoration-gold decoration-2 underline-offset-4 group-hover:text-gold">
+                  {p.dominio} →
+                </span>
+              </>
+            );
+            return p.externo === false ? (
+              <Link key={p.nombre} to={p.href} className={cardClass}>
+                {inner}
+              </Link>
+            ) : (
+              <a key={p.nombre} href={p.href} target="_blank" rel="noreferrer" className={cardClass}>
+                {inner}
+              </a>
+            );
+          })}
         </div>
       </div>
     </section>
