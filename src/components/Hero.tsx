@@ -39,19 +39,6 @@ export default function Hero() {
           <div className="absolute -inset-3 -z-10 rounded-[2rem] border border-gold/30" />
           <div className="relative aspect-[4/5] w-full overflow-hidden rounded-3xl shadow-xl">
             <img src={joseLuisPhoto} alt="José Luis Carrizo" className="h-full w-full object-cover" />
-            {/* Vignette sobre el cuadro de fondo (marca de otro negocio) para no mostrarlo */}
-            <div
-              className="absolute backdrop-blur-lg"
-              style={{
-                left: "4%",
-                top: "6%",
-                width: "29%",
-                height: "34%",
-                background: "rgba(251, 249, 246, 0.55)",
-                maskImage: "radial-gradient(ellipse at center, black 45%, transparent 75%)",
-                WebkitMaskImage: "radial-gradient(ellipse at center, black 45%, transparent 75%)",
-              }}
-            />
           </div>
         </div>
       </div>
