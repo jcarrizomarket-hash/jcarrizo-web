@@ -11,11 +11,11 @@ const proyectos = [
   },
   {
     nombre: "Valeria Travels",
-    categoria: "Agencia de viajes",
+    categoria: "CRM para agencias de viajes",
     detalle:
-      "Agencia de viajes con CRM propio: presupuestos, reservas y seguimiento de clientes de punta a punta.",
-    href: "https://valeriatravels.vercel.app",
-    dominio: "valeriatravels.com",
+      "El CRM que ya usa una agencia real — leads, clientes, expedientes, cotizaciones, reservas y facturación, ahora también como producto para otras agencias.",
+    href: "https://crm.valeriatravels.com",
+    dominio: "crm.valeriatravels.com",
   },
   {
     nombre: "Burger Le Monde",
