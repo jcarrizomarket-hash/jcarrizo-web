@@ -19,9 +19,9 @@ const proyectos = [
   },
   {
     nombre: "Burger Le Monde",
-    categoria: "Restauración",
+    categoria: "Franquicia en desarrollo",
     detalle:
-      "Hamburguesería gourmet en Castelldefels — sabores del mundo en cada hamburguesa.",
+      "Marca registrada hace más de 6 años, con un local real en Castelldefels (2019-2025). Hoy busca desarrollarse como franquicia.",
     href: "https://burgerlemonde.com",
     dominio: "burgerlemonde.com",
   },
