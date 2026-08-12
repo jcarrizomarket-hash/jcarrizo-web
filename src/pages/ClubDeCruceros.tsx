@@ -98,13 +98,13 @@ export default function ClubDeCruceros() {
           Conocé más
         </p>
         <h2 className="mt-2 font-serif text-3xl text-ink sm:text-4xl">Video oficial</h2>
-        <div className="mt-8 overflow-hidden rounded-2xl border border-ink/10 shadow-xl">
-          <video
-            src="https://video.incruises.com/videos/hero_video.mp4"
-            controls
-            playsInline
-            preload="none"
-            className="w-full"
+        <div className="mt-8 aspect-video overflow-hidden rounded-2xl border border-ink/10 shadow-xl">
+          <iframe
+            src="https://www.youtube.com/embed/voTOMAJTnW0"
+            title="Introducing the inCruises Membership"
+            className="h-full w-full"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
           />
         </div>
         <p className="mt-4 text-sm text-ink/60">
