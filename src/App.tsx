@@ -5,7 +5,13 @@ import Home from "./pages/Home";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 import ClubDeCruceros from "./pages/ClubDeCruceros";
-import BackOffice from "./pages/BackOffice";
+import Shell from "./pages/backoffice/Shell";
+import Dashboard from "./pages/backoffice/Dashboard";
+import Leads from "./pages/backoffice/Leads";
+import Clientes from "./pages/backoffice/Clientes";
+import Agenda from "./pages/backoffice/Agenda";
+import Metricas from "./pages/backoffice/Metricas";
+import Configuracion from "./pages/backoffice/Configuracion";
 
 export default function App() {
   const location = useLocation();
@@ -20,7 +26,14 @@ export default function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/club-de-cruceros" element={<ClubDeCruceros />} />
-          <Route path="/backoffice" element={<BackOffice />} />
+          <Route path="/backoffice" element={<Shell />}>
+            <Route index element={<Dashboard />} />
+            <Route path="leads" element={<Leads />} />
+            <Route path="clientes" element={<Clientes />} />
+            <Route path="agenda" element={<Agenda />} />
+            <Route path="metricas" element={<Metricas />} />
+            <Route path="configuracion" element={<Configuracion />} />
+          </Route>
         </Routes>
       </main>
       {!isBackOffice && <Footer />}
