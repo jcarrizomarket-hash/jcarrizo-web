@@ -61,6 +61,7 @@ const NAV_ITEMS = [
   { to: "/backoffice/leads", label: "Leads" },
   { to: "/backoffice/clientes", label: "Clientes" },
   { to: "/backoffice/agenda", label: "Agenda" },
+  { to: "/backoffice/whatsapp", label: "WhatsApp" },
   { to: "/backoffice/metricas", label: "Métricas" },
   { to: "/backoffice/configuracion", label: "Configuración" },
 ];

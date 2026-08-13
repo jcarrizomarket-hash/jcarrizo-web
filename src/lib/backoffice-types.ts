@@ -57,3 +57,13 @@ export type Seguimiento = {
 export function nombreCompleto(nombre: string, apellido: string | null): string {
   return apellido ? `${nombre} ${apellido}` : nombre;
 }
+
+export type WhatsAppMensaje = {
+  id: string;
+  created_at: string;
+  telefono: string;
+  direccion: "entrante" | "saliente";
+  texto: string;
+  lead_id: string | null;
+  cliente_id: string | null;
+};

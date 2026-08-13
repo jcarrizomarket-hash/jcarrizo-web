@@ -10,6 +10,7 @@ import Dashboard from "./pages/backoffice/Dashboard";
 import Leads from "./pages/backoffice/Leads";
 import Clientes from "./pages/backoffice/Clientes";
 import Agenda from "./pages/backoffice/Agenda";
+import WhatsApp from "./pages/backoffice/WhatsApp";
 import Metricas from "./pages/backoffice/Metricas";
 import Configuracion from "./pages/backoffice/Configuracion";
 
@@ -31,6 +32,7 @@ export default function App() {
             <Route path="leads" element={<Leads />} />
             <Route path="clientes" element={<Clientes />} />
             <Route path="agenda" element={<Agenda />} />
+            <Route path="whatsapp" element={<WhatsApp />} />
             <Route path="metricas" element={<Metricas />} />
             <Route path="configuracion" element={<Configuracion />} />
           </Route>
